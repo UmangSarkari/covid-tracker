@@ -23,6 +23,7 @@ const Detail = props => {
         onClick={() => navigation.goBack && navigation.goBack()}
       />
       <View style={styles.container}>
+        <DetailItem detailKey={"Country"} value={detail.country} />
         <DetailItem detailKey={"Total Cases"} value={detail.cases} />
         <DetailItem detailKey={"Cases Today"} value={detail.todayCases} />
         <DetailItem detailKey={"Deaths"} value={detail.deaths} />
