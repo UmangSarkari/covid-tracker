@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, FlatList, ActivityIndicator, Dimensions, TouchableOpacity, Image } from "react-native";
+import { View, Text, StyleSheet, FlatList, ActivityIndicator, Dimensions, TouchableOpacity } from "react-native";
 import axios from "axios";
 import colors from "../style/colors";
 import CustomHeader from "../components/CustomHeader";
@@ -7,7 +7,7 @@ import { baseUrl } from "../config";
 
 const { width: windowWidth } = Dimensions.get("window");
 
-export default class Songs extends React.Component {
+export default class Countries extends React.Component {
   constructor(props) {
     super(props);
     this.state = { loading: false, data: [], error: void 0, refreshing: false };
